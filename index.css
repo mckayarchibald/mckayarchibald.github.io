@@ -7,13 +7,13 @@ body {
 
 a {
     text-decoration: none;
-    color: green;
+    color: #689581;
     height: 70%;
     width: 70%;
 }
 
 .name {
-    color: green;
+    color: #689581;
     display: flex;
     flex-direction: row;
     width: 100vw;
@@ -24,7 +24,7 @@ a {
     margin-bottom: 100px;
     padding-right: 50px;
     padding-left: 50px;
-    border-bottom: .5px solid green;
+    border-bottom: .5px solid #689581;
     background-color: white;
 }
 
@@ -36,7 +36,7 @@ a {
     align-items: center;
     background-color: white;
     flex-direction: column;
-    color: green;
+    color: #689581;
 }
 
 .menu {
@@ -50,8 +50,8 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: .5px solid green;
-    color: green;
+    border: .5px solid #689581;
+    color: #689581;
     box-sizing: border-box;
     transform: rotate(5deg);
 }
@@ -63,51 +63,51 @@ a {
 
 .about {
     background-color: white;
-    color: green;
+    color: #689581;
     height: 65vh;
     width: 40vh;
 }
 
 .about:hover {
-    background-color: green;
+    background-color: #689581;
 }
 
 .work {
     background-color: white;
-    color: green;
+    color: #689581;
     height: 70%;
     width: 70%;
 }
 
 .work:hover {
-    background-color: green;
+    background-color: #689581;
 }
 
 .blog {
     background-color: white;
-    color: green;
+    color: #689581;
     height: 70%;
     width: 70%;
 }
 
 .blog:hover {
-    background-color: green;
+    background-color: #689581;
 }
 
 .contact {
     background-color: white;
-    color: green;
+    color: #689581;
     height: 70%;
     width: 70%;
 }
 
 .contact:hover {
-    background-color: green;
+    background-color: #689581;
 }
 
 .center {
     background-color: white;
-    color: green;
+    color: #689581;
     height: 70%;
     width: 70%;
 }
