@@ -9,3 +9,14 @@ body {
     height: 100%;
     width: 75%;
 }
+
+.contact-container a{
+    color: #bc5952;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+}
+
+.contact-container a:hover{
+    color: #8c4646;
+    text-decoration: none;
+}

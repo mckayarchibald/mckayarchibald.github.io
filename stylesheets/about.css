@@ -10,6 +10,17 @@ body {
     width: 75%;
 }
 
+.about-container a{
+    color: #bc5952;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+}
+
+.about-container a:hover{
+    color: #8c4646;
+    text-decoration: none;
+}
+
 .about-text {
     display: flex;
     flex-direction: column;
