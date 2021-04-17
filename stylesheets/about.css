@@ -4,20 +4,22 @@ body {
 
 .about-container {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: 100%;
-    width: 90%;
+    width: 75%;
 }
 
 .about-text {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 57%;
+    width: 65%;
     height: 100%;
 }
 
 .about-photo {
-    width: 35%;
+    width: 47%;
     height: 90%;
     background-image: url("../profile.jpg");
     background-position: center;
