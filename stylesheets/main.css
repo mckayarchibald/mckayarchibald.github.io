@@ -193,12 +193,11 @@ a {
 }
 
 @media screen and (orientation:portrait) {
-
     .name {
         height: 10vh;
         border-bottom: 1px solid #689581;
     }
-    
+ 
     .menu {
         display: flex;
         flex-direction: column;
@@ -212,4 +211,21 @@ a {
         height: 65vh;
         width: 38vh;
     }
+  
+  .content-container {
+    height: 78vh;
+    border-top: 1px solid #689581;
+  }
+  
+  .content-header {
+    padding-top: 75px;
+  }
+  
+  .content p {
+    font-size: 25px;
+  }
+  
+  .content-footer {
+    height: 110px
+  }
  }
