@@ -127,6 +127,9 @@ a {
     background-color: #FDFDFD;
     flex-direction: column;
     color: #689581;
+    background-image: url("../background.jpg");
+    background-position: center;
+    background-size:cover;
 }
 
 .content-container {
@@ -199,6 +202,7 @@ a {
     .name {
         height: 10vh;
         border-bottom: 1px solid #689581;
+        font-size: 23px;
     }
  
     .menu {
@@ -215,20 +219,27 @@ a {
         width: 38vh;
     }
   
-  .content-container {
-    height: 78vh;
-    border-top: 1px solid #689581;
-  }
+    .content-container {
+        height: 78vh;
+        border-top: 1px solid #689581;
+    }
   
-  .content-header {
-    padding-top: 75px;
-  }
+    .content-header {
+        padding-top: 75px;
+        font-size: 30px;
+    }
+    
+    .content p {
+        font-size: 34px;
+    }
+    
+    .content-footer {
+        height: 110px
+    }
   
-  .content p {
-    font-size: 25px;
+    .content {
+      height: 75%;
+      justify-content: center;
   }
-  
-  .content-footer {
-    height: 110px
-  }
+}
  }
