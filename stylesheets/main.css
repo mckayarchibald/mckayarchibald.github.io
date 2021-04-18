@@ -191,3 +191,25 @@ a {
     text-decoration-line: underline;
     text-decoration-style: dotted;
 }
+
+@media screen and (orientation:portrait) {
+
+    .name {
+        height: 10vh;
+        border-bottom: 1px solid #689581;
+    }
+    
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 80%;
+    }
+    
+    .about {
+        background-color: #FDFDFD;
+        color: #689581;
+        height: 65vh;
+        width: 38vh;
+    }
+ }
