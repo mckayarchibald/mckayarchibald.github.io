@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tetris</title>
+        <link rel="stylesheet" type="text/css" href="tetris.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="side-column">
+                <div class="scorecard">
+                    <div>
+                        <h3>Lines</h3>
+                        <div id="lines"></div>
+                    </div>
+                    <div>
+                        <h3>Score</h3>
+                        <div id="score"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="canvas-container"> 
+                <canvas id="tetris"></canvas>
+            </div>
+            <div class="side-column">
+                <div class="scorecard">
+                    <div class="button-container">
+                        <button id="pause-button" onclick="clickPause()"><b>||</b></button>
+                        <button id="play-button" onclick="clickPlay()">⯈</button>
+                        <button id="restart-button" onclick="clickRestart()">⟳</button>
+                    </div>
+                    <div>
+                        <h3>High
+                            <br> 
+                            Score</h3>
+                        <div id="high-score"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="tetris.js"></script>
+    </body>
+</html>
