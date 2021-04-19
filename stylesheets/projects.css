@@ -1,22 +1,58 @@
 body {
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
-.work-container {
+.project-container {
     display: flex;
-    flex-direction: column;
     align-items: center;
     height: 100%;
     width: 87%;
 }
 
-.work-container a{
+.project-container a{
     color: #bc5952;
     text-decoration-line: underline;
     text-decoration-style: dotted;
 }
 
-.work-container a:hover{
+.project-container a:hover{
     color: #8c4646;
     text-decoration: none;
+}
+
+.project-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.project-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.project-header div {
+  margin-right: 20px;
+}
+
+.project-detail{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.project-photo {
+    width: 50%;
+    height: 100%;
+    background-image: url("../images/tetris.gif");
+    background-position: center;
+    background-size:cover;
+    border: 1px solid #689581;
 }
