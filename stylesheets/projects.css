@@ -6,9 +6,8 @@ body {
     display: flex;
     align-items: center;
     height: 100%;
-    width: 87%;
+    width: 100%;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .project-container a{
@@ -51,10 +50,17 @@ body {
 }
 
 .project-photo {
-    width: 400px;
-    height: 300px;
-    background-image: url("../images/tetris.gif");
+    width: 500px;
+    height: 350px;
     background-position: center;
-    background-size:cover;
+    background-size: cover;
     border: 1px solid #689581;
+}
+
+#tetris {
+  background-image: url("../images/tetris.gif");
+}
+
+#yearbook {
+  background-image: url("../images/yearbook.gif");
 }
