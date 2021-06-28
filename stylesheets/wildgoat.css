@@ -1,0 +1,47 @@
+@font-face {
+    font-family: Pilowlava;
+    src: url('fonts/Pilowlava-Regular.eot');
+    src: url('fonts/Pilowlava-Regular?#iefix') format('embedded-opentype'),
+    url('fonts/Pilowlava-Regular.woff2') format('woff2'), 
+    url('fonts/Pilowlava-Regular.woff') format('woff')
+}
+
+@font-face {
+    font-family: Pilowlava;
+    src: url('fonts/Pilowlava-Regular.eot');
+    src: url('fonts/Pilowlava-Regular?#iefix') format('embedded-opentype'),
+    url('fonts/Pilowlava-Regular.woff2') format('woff2'), 
+    url('fonts/Pilowlava-Regular.woff') format('woff')
+}
+
+body {
+    background-color: #f1f1f1;
+    color: #2e6640;
+    margin: 0;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    font-size: 65px;
+    font-family: 'Pilowlava';
+}
+
+.name h1 {
+    margin: 0;
+}
+
+.name h2 {
+    margin: 0;
+    font-size: 65px;
+}
+
+.name img {
+    height: 48vh;
+    width: 48vh;
+}
