@@ -29,12 +29,16 @@ body {
 }
 
 .name h2 {
-    margin-top: 0;
+    margin: 0;
     font-size: 65px;
-    margin-bottom: 100px;
 }
 
 .name img {
     height: 48vh;
     width: 48vh;
+}
+
+#twitter-icon{
+    height: 26px;
+    width: 26px;
 }
