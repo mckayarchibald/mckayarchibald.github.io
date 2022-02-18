@@ -18,6 +18,21 @@ body {
     url('fonts/PicNic-Regular.woff') format('woff')
 }
 
+.bio{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 75px;
+    margin-bottom: 50px;
+}
+
+.bio img{
+    border: 8px solid #212121;
+    margin-left: 10px;
+}
+
 .name {
     display: flex;
     flex-direction: row;
@@ -29,7 +44,7 @@ body {
 }
 
 .name h1{
-    font-size: 169px;
+    font-size: 140px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,10 +54,9 @@ body {
     padding-bottom: 75px;
 }
 
-.paragraph {
-    font-size: 27px;
+.right {
+    font-size: 23px;
     font-family: 'Josefin Sans', sans-serif;
-    padding-right: 40px;
     min-height: 97.8vh;
     display: flex;
     flex-direction: column;
@@ -50,12 +64,11 @@ body {
     justify-content: flex-start;
 }
 
-.paragraph p {
-    margin-top: 75px;
+.right p {
     color:#212121;
 }
 
-.paragraph a {
+.right a {
     height: 50px;
     display: flex;
     align-items: center;
@@ -64,21 +77,23 @@ body {
     padding-right: 5px;
     text-decoration: none;
     color: #212121;
+    font-size: 30px;
 }
 
-.paragraph a:hover{
+.right a:hover{
     background-color: #212121;
     color: #ea533b;
     cursor: crosshair;
 }
 
-.paragraph a:visited {
+.right a:visited {
     color: #212121;
 }
 
-.paragraph a:visited:hover {
+.right a:visited:hover {
     color: #ea533b;
 }
+
 
 @media screen and (orientation: portrait) {
     body {
@@ -125,3 +140,4 @@ body {
         justify-content: center;
     }
   }
+
