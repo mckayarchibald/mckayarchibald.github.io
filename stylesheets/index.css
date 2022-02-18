@@ -37,7 +37,11 @@ body {
     padding: 0;
     padding-left: 25px;
     padding-bottom: 75px;
-    cursor: url(profile.jpg), auto;
+    cursor: url(profile.png), crosshair;
+}
+
+.name:hover h1{
+    cursor: url(http://www.picgifs.com/smileys/smileys-and-emoticons/money/smileys-money-671353.gif), crosshair;
 }
 
 .paragraph {
