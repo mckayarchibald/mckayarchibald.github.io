@@ -1,0 +1,31 @@
+@font-face {
+    font-family: AntiqueWells;
+    src: url('fonts/Antique-Wells.ttf'),
+    url('fonts/Antique-Wells.ttf') format('tff')
+}
+
+@font-face {
+    font-family: Columbs;
+    src: url('fonts/Columbus.ttf'),
+    url('fonts/Columbus.ttf') format('tff')
+}
+
+@font-face {
+    font-family: NewsGothic;
+    src: url('fonts/News-Gothic.otf'),
+    url('fonts/News-Gothic.otf') format('otf')
+}
+
+.menu {
+    list-style-type: none;
+    margin-right: 45px;
+}
+
+.menu-item {
+    font-size: 12px;
+    height: 17px;
+    min-width: 125px;
+    border-bottom: 1px solid rgb(157, 132, 70);
+    margin-top: 4px;
+    padding: 0;
+}
