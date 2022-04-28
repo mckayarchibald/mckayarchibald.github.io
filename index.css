@@ -22,10 +22,10 @@
 }
 
 .menu-item {
-    font-size: 12px;
+    font-size: 15px;
     height: 17px;
     min-width: 125px;
     border-bottom: 1px solid rgb(157, 132, 70);
-    margin-top: 4px;
+    margin-top: 2px;
     padding: 0;
 }
