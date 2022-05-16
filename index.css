@@ -16,16 +16,29 @@
     url('fonts/News-Gothic.otf') format('otf')
 }
 
+@font-face {
+    font-family: Arsenica;
+    src: url('fonts/ArsenicaBold.ttf'),
+    url('fonts/ArsenicaBold.ttf') format('ttf')
+}
+
+@font-face {
+    font-family: Frutiger;
+    src: url('fonts/Frutiger.ttf'),
+    url('fonts/Frutiger.ttf') format('ttf')
+}
+
 .menu {
     list-style-type: none;
     margin-right: 45px;
 }
 
 .menu-item {
-    font-size: 15px;
-    height: 17px;
+    font-size: 25px;
+    height: 27px;
     min-width: 125px;
     border-bottom: 1px solid rgb(157, 132, 70);
     margin-top: 2px;
     padding: 0;
+    padding-bottom: 5px;
 }
