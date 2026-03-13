@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+        }
+        .left-column {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            background-color: #FDFFFC;
+        }
+        .right-column {
+            flex: 1;
+            padding: 0 0 0 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: stretch;
+            position: relative; /* allow absolute positioning inside */
+        }
+        .header-text {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            background-color: #ccc;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #666;
+        }
+        .top-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .bottom-menu {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 20px;
+            width: 100%;
+        }
+        .menu-option {
+            margin: 5px 0;
+            cursor: pointer;
+            font-size: 1.1em;
+        }
+        .menu-item {
+            width: 100%;
+            flex: 1;
+            margin: 0;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding-left: 30px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        .menu-item:nth-child(1) { background-color:#235789; }
+        .menu-item:nth-child(2) { background-color: #C1292E; }
+        .menu-item:nth-child(3) { background-color: #161925; }
+        .menu-item:nth-child(4) { background-color: #F1D302; }
+        .menu-item:nth-child(5) { background-color: #80B192; }
+        
+        /* hover effect for menu items */
+        .menu-item {
+            position: relative;
+            transition: padding-left 0.2s ease;
+        }
+        .menu-item:hover {
+            padding-left: 40px;
+        }
+        .menu-item::before {
+            content: '';
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%) rotate(45deg);
+            width: 8px;
+            height: 8px;
+            background-color: white;
+            opacity: 0;
+            transition: opacity 0.2s ease;
+        }
+        .menu-item:hover::before {
+            opacity: 1;
+        }
+        
+        /* page styles */
+        .page-header {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .back-button {
+            background: none;
+            border: none;
+            padding: 0;
+            font-size: 1em;
+            color: #fff;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .page-list {
+            list-style: none;
+            padding: 0 20px;
+        }
+        .page-list li {
+            margin: 10px 0;
+            font-size: 1.2em;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="left-column">
+        <div class="top-section">
+            <div class="header-text">McKay Archibald writes code and designs software in Salt Lake City</div>
+            <div class="profile-picture">Profile Picture</div>
+        </div>
+        <div class="bottom-menu">
+            <div class="menu-option">Email</div>
+            <div class="menu-option">Github</div>
+            <div class="menu-option">BlueSky</div>
+        </div>
+    </div>
+    <div class="right-column" id="right-column">
+        <div class="menu-item" onclick="showPage('#235789', ['Portfolio A','Portfolio B','Portfolio C'])">Portfolio</div>
+        <div class="menu-item" onclick="showPage('#C1292E', ['Design A','Design B','Design C'])">Design</div>
+        <div class="menu-item" onclick="showPage('#161925', ['Code A','Code B','Code C'])">Code</div>
+        <div class="menu-item" onclick="showPage('#F1D302', ['About A','About B','About C'])">About</div>
+        <div class="menu-item" onclick="showPage('#80B192', ['Journal A','Journal B','Journal C'])">Journal</div>
+    </div>
+    <script>
+        const originalMenu = `
+        <div class="menu-item" onclick="showPage('#235789', ['Portfolio A','Portfolio B','Portfolio C'])">Portfolio</div>
+        <div class="menu-item" onclick="showPage('#C1292E', ['Design A','Design B','Design C'])">Design</div>
+        <div class="menu-item" onclick="showPage('#161925', ['Code A','Code B','Code C'])">Code</div>
+        <div class="menu-item" onclick="showPage('#F1D302', ['About A','About B','About C'])">About</div>
+        <div class="menu-item" onclick="showPage('#80B192', ['Journal A','Journal B','Journal C'])">Journal</div>
+        `;
+
+        function showMenu() {
+            const right = document.getElementById('right-column');
+            right.style.backgroundColor = '';
+            right.innerHTML = originalMenu;
+        }
+
+        function showPage(color, items) {
+            const right = document.getElementById('right-column');
+            right.style.backgroundColor = color;
+            let html = '<div class="page-header"><button onclick="showMenu()" class="back-button">Menu</button></div>';
+            html += '<ul class="page-list">';
+            items.forEach(item => {
+                html += `<li>${item}</li>`;
+            });
+            html += '</ul>';
+            right.innerHTML = html;
+        }
+    </script>
+</body>
+</html>
