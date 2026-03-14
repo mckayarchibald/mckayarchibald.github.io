@@ -151,9 +151,9 @@
         <div class="header-text">McKay Archibald writes code and designs software in Salt Lake City</div>
         <img class="profile-picture" src="profile.jpg" alt="Profile Picture">
         <div class="bottom-menu">
-            <div class="menu-option">Email</div>
-            <div class="menu-option">Github</div>
-            <div class="menu-option">BlueSky</div>
+            <div class="menu-option" onclick="window.location.href='mailto:hey@mckayarchibald.com'">Email</div>
+            <div class="menu-option" onclick="window.open('https://github.com/mckayarchibald')">Github</div>
+            <div class="menu-option" onclick="window.open('https://bsky.app/profile/mckayarchibald.bsky.social')">Bluesky</div>
         </div>
     </div>
     <div class="right-column" id="right-column">
@@ -161,7 +161,7 @@
         <div class="menu-item" onclick="showPage('Design','#C1292E', ['Design A','Design B','Design C'])"><span>Design</span></div>
         <div class="menu-item" onclick="showPage('Code','#161925', ['Code A','Code B','Code C'])"><span>Code</span></div>
         <div class="menu-item" onclick="showPage('About','#F1D302', ['About A','About B','About C'])"><span>About</span></div>
-        <div class="menu-item" onclick="showPage('Journal','#80B192', ['Journal A','Journal B','Journal C'])"><span>Journal</span></div>
+        <div class="menu-item" onclick="window.open('https://mckayarchibald.hashnode.dev/')"><span>Journal</span></div>
     </div>
     <script>
         const originalMenu = `
@@ -169,7 +169,7 @@
         <div class="menu-item" onclick="showPage('Design','#C1292E', ['Design A','Design B','Design C'])"><span>Design</span></div>
         <div class="menu-item" onclick="showPage('Code','#161925', ['Code A','Code B','Code C'])"><span>Code</span></div>
         <div class="menu-item" onclick="showPage('About','#F1D302', ['About A','About B','About C'])"><span>About</span></div>
-        <div class="menu-item" onclick="showPage('Journal','#80B192', ['Journal A','Journal B','Journal C'])"><span>Journal</span></div>
+        <div class="menu-item" onclick="window.open('https://mckayarchibald.hashnode.dev/')"><span>Journal</span></div>
         `;
 
         function showMenu() {
